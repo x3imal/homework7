@@ -1,8 +1,7 @@
-import java.sql.Statement;
-
 public class Main {
     public static void main(String[] args) {
             task1();
+            task2();
     }
 
     public static void task1() {
@@ -17,5 +16,20 @@ public class Main {
             System.out.println("Месяц " + mans + " сумма накоплений " + total + " рублей");
         }
         //System.out.println("За " + mans + " месяцев, можно накопить 2 459 000 рублей");
+    }
+
+    public static void task2() {
+        System.out.println("Задача 2");
+
+        int a = 1;
+        while (a <= 10) {
+            System.out.print(" " + a++);
+            }
+        System.out.println();
+
+        for (; a > 0; a--) {
+            if (a < 11)
+            System.out.print(" " + a);
+        }
     }
 }
