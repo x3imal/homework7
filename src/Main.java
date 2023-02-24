@@ -6,6 +6,7 @@ public class Main {
             task4();
             task5();
             task6();
+            task7();
     }
 
     public static void task1() {
@@ -62,6 +63,7 @@ public class Main {
 
             System.out.println("Месяц " + month + " численность накоплений составляет " + deposit);
         }
+        System.out.println("Всего месяцев " + month);
     }
 
     public static void task5 () {
@@ -76,6 +78,7 @@ public class Main {
             if (month % 6 == 0)
                 System.out.println("Месяц " + month + " численность накоплений составляет " + deposit);
         }
+        System.out.println("Всего месяцев " + month);
     }
 
     public static void task6 () {
@@ -89,6 +92,18 @@ public class Main {
             month += 1;
             if (month % 6 == 0)
                 System.out.println("Месяц " + month + " численность накоплений составляет " + deposit);
+        }
+        System.out.println("Всего месяцев " + month);
+    }
+
+    public static void task7 () {
+        System.out.println("Задача 7");
+        int allMonth = 31;
+        int day = 3;
+        System.out.println("Сегодня пятница " + day + " -е число. Необходимо подготовить отчет");
+        while (day < allMonth) {
+            day = day + 7;
+            System.out.println("Сегодня пятница " + day + " -е число. Необходимо подготовить отчет");
         }
     }
 }
