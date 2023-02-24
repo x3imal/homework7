@@ -4,6 +4,7 @@ public class Main {
             task2();
             task3();
             task4();
+            task5();
     }
 
     public static void task1() {
@@ -59,6 +60,20 @@ public class Main {
             month += 1;
 
             System.out.println("Месяц " + month + " численность накоплений составляет " + deposit);
+        }
+    }
+
+    public static void task5 () {
+        System.out.println("Задача 5");
+
+        int deposit = 15000;
+        int total = 12_000_000;
+        int month = 0;
+        while (deposit < total) {
+            deposit = deposit + deposit * 7 / 100;
+            month += 1;
+            if (month % 6 == 0)
+                System.out.println("Месяц " + month + " численность накоплений составляет " + deposit);
         }
     }
 }
