@@ -7,6 +7,7 @@ public class Main {
             task5();
             task6();
             task7();
+            task8();
     }
 
     public static void task1() {
@@ -104,6 +105,21 @@ public class Main {
         while (day < allMonth) {
             day = day + 7;
             System.out.println("Сегодня пятница " + day + " -е число. Необходимо подготовить отчет");
+        }
+    }
+
+    public static void task8 () {
+        System.out.println("Задача 8");
+
+        int age = 2023;
+        int ageFuture = age + 100;
+        int agePast = age - 200;
+        int age0 = 0;
+        while (age0 < ageFuture) {
+            age0 = age0 + 1;
+            if (age0 % 79 == 0)
+            if (age0 < ageFuture && age0 > agePast)
+                System.out.println(age0);
         }
     }
 }
