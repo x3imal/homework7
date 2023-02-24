@@ -3,6 +3,7 @@ public class Main {
             task1();
             task2();
             task3();
+            task4();
     }
 
     public static void task1() {
@@ -10,11 +11,11 @@ public class Main {
 
         int accumulation = 15_000;
         int total = 0;
-        int mans = 0;
+        int month = 0;
         while (total < 2_459_000) {
             total = total + accumulation;
-            mans = total / accumulation;
-            System.out.println("Месяц " + mans + " сумма накоплений " + total + " рублей");
+            month = total / accumulation;
+            System.out.println("Месяц " + month + " сумма накоплений " + total + " рублей");
         }
         //System.out.println("За " + mans + " месяцев, можно накопить 2 459 000 рублей");
     }
@@ -44,6 +45,20 @@ public class Main {
         for (int year = 1; year < 11; year++) {
             peopleCountry = peopleCountry + (fertilityPeopleOneYear - dayPeopleOneYear);
             System.out.println("Год " + year +" численность населения составляет " + peopleCountry);
+        }
+    }
+
+    public static void task4 () {
+        System.out.println("Задача 4");
+
+        int deposit = 15000;
+        int total = 12_000_000;
+        int month = 0;
+        while (deposit < total) {
+            deposit = deposit + deposit * 7/100;
+            month += 1;
+
+            System.out.println("Месяц " + month + " численность накоплений составляет " + deposit);
         }
     }
 }
